@@ -49,6 +49,6 @@ CREATE TABLE Payment (
     BookingID INT NOT NULL,
     PaymentDate DATE NOT NULL,
     Amount DECIMAL(10,2) NOT NULL,
-    PaymentMethod VARCHAR(50),  -- Example: Credit Card, Cash, etc.
-    FOREIGN KEY (BookingID) REFERENCES Booking(BookingID)  -- No ON DELETE
+    PaymentMethod VARCHAR(50),
+    FOREIGN KEY (BookingID) REFERENCES Booking(BookingID)  
 );
